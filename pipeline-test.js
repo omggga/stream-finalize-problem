@@ -121,31 +121,9 @@ function getdata5(){
 	})
 }
 
-
-
-
-
-getdata5().then(function() {
-	const wstream5 = fs.createWriteStream('test5.xml')
-	outStream5.pipe(wstream5)
-})
-
-
-
-
-
-
-
-/*
-
 getdata1().then(function() {
 	const wstream1 = fs.createWriteStream('test1.xml')
 	outStream1.pipe(wstream1)
-})
-
-getdata3().then(function() {
-	const wstream3 = fs.createWriteStream('test3.xml')
-	outStream3.pipe(wstream3)
 })
 
 getdata2().then(function() {
@@ -153,6 +131,11 @@ getdata2().then(function() {
 	outStream2.pipe(wstream2)
 })
 
+
+getdata3().then(function() {
+	const wstream3 = fs.createWriteStream('test3.xml')
+	outStream3.pipe(wstream3)
+})
 
 getdata4().then(function() {
 	const wstream4 = fs.createWriteStream('test4.xml')
@@ -162,4 +145,4 @@ getdata4().then(function() {
 getdata5().then(function() {
 	const wstream5 = fs.createWriteStream('test5.xml')
 	outStream5.pipe(wstream5)
-}) */
+})
